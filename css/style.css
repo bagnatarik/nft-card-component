@@ -198,3 +198,9 @@ hr {
 #view-container:hover {
     background-color: var(--cyan);
 }
+
+@media screen and (max-width: 425px) {
+    #card {
+        width: 350px;
+    }
+}
