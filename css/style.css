@@ -1,0 +1,186 @@
+:root {
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    
+    /* Fontsize */
+    --size: 18px;
+}
+
+*, body {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit";
+
+    background-color: var(--very-dark-blue-main);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+#card {
+    width: 400px;
+    padding: 25px 25px;
+
+    background-color: var(--very-dark-blue-card);
+
+    border-radius: 25px;
+
+    box-shadow: 5px 5px 10px var(--very-dark-blue-line);
+}
+
+#card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+    transition: color 500ms;
+}
+
+p {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+#card-description p {
+    margin-bottom: 15px;
+}
+
+#card-description a:hover {
+    color: var(--cyan);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--very-dark-blue-line);
+}
+
+#logo-text {
+    display: flex;
+    align-items: center;
+
+    font-size: var(--size);
+    font-weight: 600;
+
+    color: var(--cyan);
+}
+
+#logo-text-clock {
+    display: flex;
+    align-items: center;
+}
+
+#logo-text-clock span {
+    margin-left: 5px;
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+
+#logo-text-clock img{
+    width: 25px;
+    margin-bottom: 0;
+}
+
+#logo-text img {
+    width: 15px;
+    margin-bottom: 0;
+}
+
+#logo-text span {
+    margin-left: 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+#avatar-container {
+    display: flex;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+#avatar-container img {
+    width: 40px;
+
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+#avatar-container p {
+    margin-left: 10px;
+}
+
+#avatar-container p span {
+    color: var(--white);
+    font-weight: 400;
+
+    transition: color 500ms;
+}
+
+#avatar-container p span:hover {
+    cursor: pointer;
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+#avatar-container img {
+    margin-bottom: 0;
+}
+
+#avatar-container p {
+    margin-bottom: 0;
+}
+
+#image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container:hover {
+    cursor: pointer;
+}
+
+#image-container svg {
+    position: absolute;
+    opacity: 0;
+
+    transition: opacity 500ms;
+}
+
+.iris {
+    fill: var(--cyan);
+}
